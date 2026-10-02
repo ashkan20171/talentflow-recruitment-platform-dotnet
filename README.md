@@ -153,4 +153,3 @@ This project is intended to demonstrate more than CRUD screens. It showcases **l
 ## License
 
 Choose and add a license before publishing publicly. No license is included by default, so all rights remain with the repository owner until one is selected.
-"# talentflow-recruitment-platform-dotnet" 

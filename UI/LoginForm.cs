@@ -60,11 +60,18 @@ namespace AshkanJobCenter.UI
             // regions explicitly in ArrangeLayout().
             contentPanel.Dock = DockStyle.None;
             contentPanel.BackColor = Color.FromArgb(244, 248, 252);
+            VisualAssets.ApplyWorkspaceBackground(contentPanel);
             Controls.Add(contentPanel);
 
             brandPanel.Dock = DockStyle.None;
             brandPanel.Width = 430;
             brandPanel.BackColor = Color.FromArgb(22, 67, 105);
+            VisualAssets.ApplyWorkspaceBackground(brandPanel);
+            brandPanel.Paint += delegate(object sender, PaintEventArgs e)
+            {
+                using (var overlay = new SolidBrush(Color.FromArgb(205, 10, 39, 67)))
+                    e.Graphics.FillRectangle(overlay, brandPanel.ClientRectangle);
+            };
             Controls.Add(brandPanel);
             brandPanel.BringToFront();
 
@@ -141,7 +148,7 @@ namespace AshkanJobCenter.UI
         private void BuildLoginCard()
         {
             card.Size = new Size(500, 590);
-            card.BackColor = Color.White;
+            card.BackColor = Color.FromArgb(248, 252, 255);
             card.Padding = new Padding(48, 40, 48, 36);
             card.Paint += delegate(object sender, PaintEventArgs e)
             {
@@ -359,7 +366,7 @@ namespace AshkanJobCenter.UI
             securityHint.Text = fa
                 ? "✓ دسترسی مبتنی بر نقش\r\n✓ ثبت رویدادهای امنیتی\r\n✓ مدیریت یکپارچه فرآیند استخدام"
                 : "✓ Role-based access\r\n✓ Security audit trail\r\n✓ End-to-end recruitment workflow";
-            versionLabel.Text = fa ? "Ashkan Job Center  •  Stage 13 Layout & Workspace Polish" : "Ashkan Job Center  •  Stage 13 Layout & Workspace Polish";
+            versionLabel.Text = fa ? "TalentFlow  •  Stage 18 Immersive Workspace" : "TalentFlow  •  Stage 18 Immersive Workspace";
 
             RightToLeft = fa ? RightToLeft.Yes : RightToLeft.No;
             title.TextAlign = fa ? ContentAlignment.MiddleRight : ContentAlignment.MiddleLeft;

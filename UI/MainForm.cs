@@ -49,6 +49,7 @@ namespace AshkanJobCenter.UI
             Controls.Add(top);
 
             content = new Panel { BackColor = Theme.Background, Padding = new Padding(22) };
+            VisualAssets.ApplyWorkspaceBackground(content);
             Controls.Add(content);
             BuildNavigation();
             RightToLeft = L.Fa ? RightToLeft.Yes : RightToLeft.No;
@@ -212,7 +213,7 @@ namespace AshkanJobCenter.UI
                 case "calendar": c = new CalendarPage(); break; case "resume": c = new ResumeBuilderPage(); break; case "health": c = new SystemHealthPage(); break;
                 case "backup": c = new BackupRestorePage(); break; case "settings": c = new SettingsPage(); break; default: c = Candidate ? (Control)new CandidateHomePage() : new DashboardPage(); break;
             }
-            pageTitle.Text = NavText(key); c.Dock = DockStyle.Fill; content.Controls.Add(c);
+            pageTitle.Text = NavText(key); c.Dock = DockStyle.Fill; c.BackColor = Color.Transparent; content.Controls.Add(c); VisualAssets.RevealBackground(c);
             foreach (Control n in navButtons.Controls) { var b=n as Button; if(b!=null) b.BackColor=Convert.ToString(b.Tag)==key?navActive:navColor; }
             StyleNavigation();
         }
