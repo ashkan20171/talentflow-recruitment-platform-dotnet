@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" Condition="false" />
+ <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{73C5A1B4-879B-4B30-A72B-9142A947F81A}</ProjectGuid><OutputType>WinExe</OutputType><RootNamespace>AshkanJobCenter</RootNamespace><AssemblyName>AshkanJobCenter</AssemblyName><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><FileAlignment>512</FileAlignment><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects></PropertyGroup>
+ <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'"><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>bin\Debug\</OutputPath><DefineConstants>DEBUG;TRACE</DefineConstants><WarningLevel>4</WarningLevel></PropertyGroup>
+ <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'"><DebugType>pdbonly</DebugType><Optimize>true</Optimize><OutputPath>bin\Release\</OutputPath><DefineConstants>TRACE</DefineConstants><WarningLevel>4</WarningLevel></PropertyGroup>
+ <ItemGroup><Reference Include="System"/><Reference Include="System.Configuration"/><Reference Include="System.Core"/><Reference Include="System.Data"/><Reference Include="System.Drawing"/><Reference Include="System.Security"/><Reference Include="System.Windows.Forms"/><Reference Include="System.Xml"/></ItemGroup>
+ <ItemGroup>
+  <Compile Include="Program.cs" />
+  <Compile Include="Core\AppSession.cs" />
+  <Compile Include="Core\LanguageManager.cs" />
+  <Compile Include="Core\Theme.cs" />
+  <Compile Include="Core\Security.cs" />
+  <Compile Include="Data\Database.cs" />
+  <Compile Include="Services\AuthService.cs" />
+  <Compile Include="UI\ModernControls.cs" />
+  <Compile Include="UI\LoginForm.cs" />
+  <Compile Include="UI\RegisterForm.cs" />
+  <Compile Include="UI\MainForm.cs" />
+  <Compile Include="UI\DashboardPage.cs" />
+  <Compile Include="UI\JobsPage.cs" />
+  <Compile Include="UI\CandidatesPage.cs" />
+  <Compile Include="UI\ApplicationsPage.cs" />
+  <Compile Include="UI\CompaniesPage.cs" />
+  <Compile Include="UI\UsersPage.cs" />
+  <Compile Include="UI\SettingsPage.cs" />
+  <Compile Include="UI\InterviewsPage.cs" />
+  <Compile Include="UI\NotificationsPage.cs" />
+  <Compile Include="UI\TalentPage.cs" />
+  <Compile Include="UI\AnalyticsPage.cs" />
+  <Compile Include="UI\OffersPage.cs" />
+  <Compile Include="UI\MatchingPage.cs" />
+  <Compile Include="UI\ActivityPage.cs" />
+  <Compile Include="UI\CommandCenterPage.cs" />
+  <Compile Include="UI\CalendarPage.cs" />
+  <Compile Include="UI\SystemHealthPage.cs" />
+  <Compile Include="UI\BackupRestorePage.cs" />
+  <Compile Include="UI\ResumeBuilderPage.cs" />
+  <Compile Include="UI\Candidate360Page.cs" />
+  <Compile Include="UI\KanbanPage.cs" />
+  <Compile Include="UI\PermissionMatrixPage.cs" />
+  <Compile Include="UI\DocumentCenterPage.cs" />
+  <Compile Include="UI\EmailTemplatePage.cs" />
+  <Compile Include="UI\InterviewScorecardPage.cs" />
+  <Compile Include="UI\SecurityCenterPage.cs" />
+  <Compile Include="UI\ExecutiveDashboardPage.cs" />
+  <Compile Include="UI\AdvancedSearchPage.cs" />
+  <Compile Include="UI\ReportsPage.cs" />
+  <Compile Include="UI\FeatureFlagsPage.cs" />
+  <Compile Include="UI\InputDialog.cs" />
+  <Compile Include="UI\ExecutiveOverviewPage.cs" />
+  <Compile Include="UI\SessionSecurityPage.cs" />
+  <Compile Include="UI\UserProfilePage.cs" />
+  <Compile Include="UI\QuickActionsPage.cs" />
+  <Compile Include="UI\CandidateHomePage.cs" />
+  <Compile Include="UI\SavedJobsPage.cs" />
+  <Compile Include="UI\JobAlertsPage.cs" />
+  <Compile Include="UI\ApplicationTimelinePage.cs" />
+  <Compile Include="UI\RecruiterWorkspacePage.cs" />
+  <Compile Include="UI\RecruitmentTasksPage.cs" />
+  <Compile Include="UI\CandidateComparisonPage.cs" />
+  <Compile Include="UI\EmployerDashboardPage.cs" />
+  <Compile Include="UI\OfferApprovalPage.cs" />
+  <Compile Include="UI\TalentPoolPage.cs" />
+  <Compile Include="UI\HiringInsightsPage.cs" />
+  <Compile Include="Properties\AssemblyInfo.cs" />
+ </ItemGroup>
+ <ItemGroup><None Include="App.config"/><Content Include="Database\Legacy-KaryabiDB.mdf"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content><Content Include="Database\Legacy-KaryabiDB_log.ldf"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content><Content Include="README.md"/><Content Include="REPOSITORY.md"/><Content Include="README-STAGE17.md"/></ItemGroup>
+ <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

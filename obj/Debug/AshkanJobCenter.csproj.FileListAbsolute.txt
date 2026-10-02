@@ -1,0 +1,9 @@
+E:\project\C#\AshkanJobCenter\bin\Debug\Database\Legacy-KaryabiDB.mdf
+E:\project\C#\AshkanJobCenter\bin\Debug\Database\Legacy-KaryabiDB_log.ldf
+E:\project\C#\AshkanJobCenter\bin\Debug\AshkanJobCenter.exe.config
+E:\project\C#\AshkanJobCenter\bin\Debug\AshkanJobCenter.exe
+E:\project\C#\AshkanJobCenter\bin\Debug\AshkanJobCenter.pdb
+E:\project\C#\AshkanJobCenter\obj\Debug\AshkanJobCenter.csproj.AssemblyReference.cache
+E:\project\C#\AshkanJobCenter\obj\Debug\AshkanJobCenter.csproj.CoreCompileInputs.cache
+E:\project\C#\AshkanJobCenter\obj\Debug\AshkanJobCenter.exe
+E:\project\C#\AshkanJobCenter\obj\Debug\AshkanJobCenter.pdb

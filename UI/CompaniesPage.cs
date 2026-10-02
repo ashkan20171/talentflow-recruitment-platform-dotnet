@@ -1,0 +1,1 @@
+﻿using System.Windows.Forms;using AshkanJobCenter.Data;namespace AshkanJobCenter.UI{public class CompaniesPage:UserControl{public CompaniesPage(){var g=Ui.Grid();g.DataSource=Database.Query("SELECT Id,Name AS [نام / Name],Industry AS [صنعت / Industry],City AS [شهر / City],Phone,Email,Website,IsActive AS [فعال / Active] FROM Companies ORDER BY Id DESC");Controls.Add(g);}}}
